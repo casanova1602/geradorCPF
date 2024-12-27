@@ -1,0 +1,124 @@
+:root{
+    --color-one: #2E4984;
+    --color-two: #ffffff;
+    --color-detail: #5276C6;
+    --color-active: #21345E;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-one)
+}
+
+.check-label{
+    font-size: 1.5em;
+}
+
+h1 {
+    position: absolute;
+    color: var(--color-active);
+    font-family:Catamaran, sans-serif;
+    font-size: 2.7em;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    text-align: center;  
+    top: 180px;
+    opacity: 1; 
+    z-index: 10;
+    text-shadow: 2px 2px 4px #fff, 2px 2px 4px #000
+}
+.img-cpf{
+    position: relative;
+    width: 326px;
+    height: 204px;
+    margin: 20px;
+    mask-image: linear-gradient(to bottom,  #fff, transparent);
+    border: none;
+    border-radius: 10px;
+    opacity: 0.6;
+    margin-bottom: 0px;
+}
+.container{
+    background-color: var(--color-two);
+    max-width: 640px;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+.flex-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin: 10px auto;
+}
+
+.advertencia{
+    max-width: 600px;
+    margin: 10px auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 12px;
+}
+
+.gerar{
+    margin: 10px 0;
+}
+
+.cpf-text{
+    width: 326px;
+    margin-top: 10px;
+    border-color: var(--color-detail);
+    padding: 7px;
+    font-size: 1.5em;
+}
+
+.flex-button{
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 326px;
+}
+
+.check-mask{
+    width: 20px; /*Desired width*/
+    height: 20px; /*Desired height*/
+    margin-right: 8px;  
+  }
+
+.flex-check{
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    justify-content: flex-start; 
+    width: 326px;
+    margin-top: 10px;  
+}
+
+button{
+    background-color: var(--color-detail);
+    color: var(--color-two);
+    border: none;
+    height: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.gerar, .copiar{
+    width: 25%;
+}
+
+.gerar-copiar {
+    width: 40%;
+}
+
+button:active{
+    background-color: var(--color-active) ;
+}
